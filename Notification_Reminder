@@ -1,0 +1,13 @@
+import time
+from plyer import notification
+if __name__ == '__main__':
+    while True:
+        notification.notify(
+            title="All Day Reminder",
+            message="Today you have to submit "
+                    " your project and you have"
+                    " not completed it till now.",
+            timeout=10
+        )
+        time.sleep(60*60)
+
